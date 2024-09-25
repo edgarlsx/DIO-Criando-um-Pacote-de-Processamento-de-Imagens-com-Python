@@ -16,3 +16,16 @@ pip install pillow opencv-python
 
 ## Código do pacote de processamento de imagens:
 __init__.py
+
+# ___Como Usar o Pacote___
+## Depois de criar a estrutura, você pode usar o pacote para realizar operações em imagens. Por exemplo:
+from image_processing import open_image, save_image, apply_blur
+
+## Carregar imagem
+img = open_image('minha_imagem.jpg')
+
+## Aplicar filtro de desfoque
+blurred_img = apply_blur(img, intensity=7)
+
+## Salvar a imagem alterada
+save_image(blurred_img, 'minha_imagem_blur.jpg')
